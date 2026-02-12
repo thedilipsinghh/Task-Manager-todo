@@ -11,10 +11,11 @@ app.use(exprees.json())
 
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? "oneline"
+        ? 'https://task-manager-todo-client.vercel.app'
         : 'http://localhost:3000',
     credentials: true
 }));
+
 
 app.use("/api/todo", require("./routes/todo.routes.js"))
 
