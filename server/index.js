@@ -11,7 +11,7 @@ app.use(exprees.json())
 
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? 'https://task-manager-todo-client.vercel.app'
+        ? 'https://task-manager-todo-new-client.vercel.app'
         : 'http://localhost:3000',
     credentials: true
 }));
