@@ -16,11 +16,6 @@ app.use(cors({
     credentials: true
 }));
 
-// Allow both local dev and deployed frontend
-const allowedOrigins = [
-    "http://localhost:3000",
-    "https://task-manager-todo-new-client.vercel.app"
-];
 
 app.use("/api/todo", require("./routes/todo.routes.js"))
 
